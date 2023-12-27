@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "author": "PoojaNarawad <poojanarawad16@gmail.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "umi": "^4.0.90"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.3.3"
+  }
+}

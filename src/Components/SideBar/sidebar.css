@@ -1,0 +1,33 @@
+.logo {
+  margin: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 220px;
+  border: 1px solid red;
+}
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar a img {
+  margin-right: 6px;
+}
+
+.help {
+  margin: 20px;
+}
+.logout {
+  margin: 20px;
+}
+.logout img {
+  margin-right: 7px;
+}
+.help img {
+  margin-right: 7px;
+}

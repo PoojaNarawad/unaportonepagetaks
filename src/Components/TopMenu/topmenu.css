@@ -1,0 +1,33 @@
+.topmenu {
+  display: flex;
+  justify-content: end;
+  height: 10vh;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.livetoggle {
+  display: flex;
+  margin: 20px;
+}
+.live1 {
+  font-size: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.notification {
+  margin-left: 15px;
+}
+
+.avtar {
+  display: flex;
+  margin: 18px;
+  font-size: 15px;
+}
+.avtarimg {
+  margin-right: 5px;
+}
+.email {
+  color: gray;
+}

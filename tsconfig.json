@@ -1,0 +1,11 @@
+
+{
+  "extends": "./src/.umi/tsconfig.json" ,
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // ... other options
+  },
+  // ... other configurations
+}
