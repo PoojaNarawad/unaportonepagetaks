@@ -5,12 +5,13 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  margin: 5px;
   width: 220px;
-  /* border: 1px solid red; */
+  padding: 10px;
+  border: 1px solid red;
 }
 .sidebar a {
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
   color: black;
 }
@@ -19,15 +20,20 @@
   margin-right: 6px;
 }
 
+.darkmodetoggle {
+  display: flex;
+  padding: 20px;
+}
+
 .help {
-  margin: 20px;
+  padding: 20px;
 }
 .logout {
-  margin: 20px;
+  margin: 30px;
 }
 .logout img {
-  margin-right: 7px;
+  margin-right: 5px;
 }
 .help img {
-  margin-right: 7px;
+  margin-right: 4px;
 }

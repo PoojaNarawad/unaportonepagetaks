@@ -2,3 +2,27 @@
   background-color: aliceblue;
   height: 100vh;
 }
+
+.bodytable{
+  background-color: white;
+  margin: 30px;
+  max-width: max-content;
+}
+.table {
+  padding: 20px;
+}
+.tablehead{
+  color: gray;
+  font-size: small;
+}
+
+.tablebody td {
+  font-size:small;
+  margin-right: 10px;
+  padding: 25px;
+}
+.checkbox{
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 10px;
+}

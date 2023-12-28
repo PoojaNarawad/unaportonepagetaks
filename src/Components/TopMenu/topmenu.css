@@ -1,14 +1,30 @@
 .topmenu {
   display: flex;
-  justify-content:flex-end;
-  height: 10vh;
-  width: 90vw;
-  /* border: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 10px;
 }
-
+.header-search{
+  display: flex;
+	flex: 1;
+}
+.header-search input{
+  width: 100%;
+	height: 12px;
+	border:1px solid rgb(233, 230, 230);
+	padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.header-end{
+  display: flex;
+  align-items: center;
+}
 .livetoggle {
   display: flex;
-  margin: 20px;
+  justify-content: space-evenly;
 }
 .live1 {
   font-size: 15px;
@@ -18,55 +34,123 @@
 
 .notification {
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .avtar {
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 5px;
   display: flex;
-  margin: 18px;
+  align-items: center;
+  justify-content: space-around;
   font-size: 15px;
 }
 .avtarimg {
   margin-right: 5px;
 }
+.nameemail {
+  padding: 4px;
+}
 .email {
   color: gray;
+  margin-top: 3px;
 }
 
 
-.searchbar {
+/* topheader ends here */
+
+.secondnav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-left: 20px;
 }
 
-.searchbar div p {
-  font-size: 14px;
+.secondnav div p {
+  font-size: 12px;
   margin-top: 40px;
 }
 
-.searchbar div select {
+.secondnav div select {
   padding: 7px;
   width: 20vw;
-  color: gray;
+  border: 1px solid rgb(226, 220, 220);
+  color: rgb(150, 147, 147);
   margin-top: 8px;
   border-radius: 5px;
 }
 
-button{
+button {
   padding: 10px;
   margin-right: 10px;
-  margin-top:60px;
+  margin-top: 60px;
   width: 115px;
   border: none;
   border-radius: 5px;
 }
-.search{
+.search {
   background-color: rgb(26, 26, 168);
   color: white;
   margin-left: 10px;
 }
-.reset{
+.reset {
   background-color: white;
   color: black;
+}
+
+.functionbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  
+}
+
+.selectedtext {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.deletebuttton {
+  margin-left: 10px;
+  margin-top: -1px;
+  font-size: 11px;
+  color: gray;
+}
+
+.buttonsection {
+  display: flex;
+}
+
+.buttonsection img {
+  margin-right: 8px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(226, 220, 220);
+  border-radius: 10px;
+}
+.searchbar input[type="text"] {
+  margin: 6px;
+  border: none;
+}
+
+.searchicon {
+  color: gray;
+  margin-top: 5px;
+}
+.searchbaricon {
+  color: gray;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
 }

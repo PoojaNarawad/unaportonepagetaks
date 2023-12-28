@@ -10,7 +10,8 @@ import React from 'react';
 
 const SideBar: React.FC = () => {
   return (
-    <div className="sidebar">
+    <div>
+      <div className="sidebar">
       <div className="logo">
         <img src={logo} width="100" />
       </div>
@@ -38,9 +39,8 @@ const SideBar: React.FC = () => {
         <img src={dashboard} width="12" />
         KYC
       </Link>
-      <div className="livetoggle">
+      <div className="darkmodetoggle">
         <div>
-          {" "}
           <img src={live1} width="15" />
         </div>
         <div className="live1">Dark Mode</div>
@@ -53,11 +53,11 @@ const SideBar: React.FC = () => {
         <img src={help} width="15" />
         Help
       </div>
-
-      <div className="logout">
-        <img src={logout} width="15" />
-        Log Out
-      </div>
+    </div>
+    <div className="logout">
+    <img src={logout} width="15" />
+    Log Out
+  </div>
     </div>
   );
 }

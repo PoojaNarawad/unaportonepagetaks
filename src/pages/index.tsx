@@ -10,7 +10,7 @@
 
 
 import React from 'react';
-import SearchBar from '@/Components/TopMenu/SeachBar';
+import SearchBar from '@/Components/TopMenu/SecondNav';
 
 const Index: React.FC = () => {
   const options = ['Option 1', 'Option 2', 'Option 3'];

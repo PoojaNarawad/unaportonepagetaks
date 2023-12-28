@@ -14,7 +14,7 @@ const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
     onSelect(option);
   };
   return (
-    <div className="searchbar">
+    <div className="secondnav">
       <div>
         <p>Created By</p>
         <select
