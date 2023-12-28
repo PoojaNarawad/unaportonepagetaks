@@ -31,3 +31,42 @@
 .email {
   color: gray;
 }
+
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.searchbar div p {
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.searchbar div select {
+  padding: 7px;
+  width: 20vw;
+  color: gray;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+button{
+  padding: 10px;
+  margin-right: 10px;
+  margin-top:60px;
+  width: 115px;
+  border: none;
+  border-radius: 5px;
+}
+.search{
+  background-color: rgb(26, 26, 168);
+  color: white;
+  margin-left: 10px;
+}
+.reset{
+  background-color: white;
+  color: black;
+}
