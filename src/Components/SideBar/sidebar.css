@@ -7,7 +7,7 @@
   flex-direction: column;
   height: 100vh;
   width: 220px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .sidebar a {
   padding: 10px;

@@ -1,9 +1,9 @@
 .topmenu {
   display: flex;
-  justify-content: end;
+  justify-content:flex-end;
   height: 10vh;
-  width: 100%;
-  border: 1px solid red;
+  width: 90vw;
+  /* border: 1px solid red; */
 }
 
 .livetoggle {

@@ -1,8 +1,8 @@
 // import { Link, Outlet } from 'umi';
+import React from "react";
 import "./index.css";
 import TopMenu from "@/Components/TopMenu/TopMenu";
 import SideBar from "@/Components/SideBar/SideBar";
-import MainTable from "@/Components/Maintable/MainTable";
 // import ColorModeSwitcher from '../Components/SideBar/colorModeSwitcher'
 
 export default function Layout() {
@@ -14,7 +14,6 @@ export default function Layout() {
         {/* <ColorModeSwitcher/> */}
         {/* <Outlet /> */}
       </div>
-      <MainTable />
     </div>
   );
 }

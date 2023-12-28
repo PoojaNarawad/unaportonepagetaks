@@ -6,8 +6,9 @@ import live1 from "../../assets/live1.png";
 import darkmode from "../../assets/darkmode.png";
 import logout from "../../assets/logout.png";
 import help from "../../assets/help.jpeg";
+import React from 'react';
 
-export default function Layout() {
+const SideBar: React.FC = () => {
   return (
     <div className="sidebar">
       <div className="logo">
@@ -60,3 +61,6 @@ export default function Layout() {
     </div>
   );
 }
+
+
+export default SideBar;

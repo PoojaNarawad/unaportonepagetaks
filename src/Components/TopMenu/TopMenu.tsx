@@ -1,17 +1,17 @@
 import live1 from "../../assets/live1.png";
-// import live2 from '../assets/live2.png';
 import live2 from "../../assets/live2.png";
 import notificationbell from "../../assets/notificationbell.png";
 import avtar from "../../assets/avtar.png";
 import "./topmenu.css";
+import React from 'react';
 import MainTable from "@/Components/Maintable/MainTable";
 
-export default function TopMenu() {
+const  TopMenu : React.FC = () => {
   return (
-    <div className="topmenu">
+    <div>
+      <div className="topmenu">
       <div className="livetoggle">
         <div>
-          {" "}
           <img src={live1} width="15" />
         </div>
         <div className="live1">Live</div>
@@ -33,7 +33,10 @@ export default function TopMenu() {
           <h6 className="email">vishal@gmail.com</h6>
         </div>
       </div>
-      <MainTable />
+    </div>
+    <MainTable />
     </div>
   );
 }
+
+export default TopMenu;
