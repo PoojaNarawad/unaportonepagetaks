@@ -1,4 +1,3 @@
-// import { Link, Outlet } from 'umi';
 import React from "react";
 import "./index.css";
 import TopMenu from "@/Components/TopMenu/TopMenu";
@@ -12,7 +11,6 @@ export default function Layout() {
         <SideBar />
         <TopMenu />
         {/* <ColorModeSwitcher/> */}
-        {/* <Outlet /> */}
       </div>
     </div>
   );

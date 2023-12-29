@@ -2,20 +2,27 @@
   background-color: aliceblue;
 }
 
-.bodytable{
+.bodytable {
   background-color: white;
-  margin:16px;
+  margin: 16px;
 }
-.table thead{
+thead,
+tbody,
+th,
+td {
+  font-family: Inter;
+}
+thead th {
+  
   height: 44px;
-  border:0px, 0px, 3px, 0px;
-  font-size:14px;
+  font-size: 12px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.4);
-  background-color: rgb(252, 248, 248);
+  color: rgba(0, 0, 0, 0.5);
+ border-bottom: 2px solid  rgb(233, 230, 230);
 }
+
 .table tbody td {
-  font-size:small;
-  width:217px;
-  padding: 20px;
+  font-size:12px;
+  width: 217px;
+  padding: 10px;
 }

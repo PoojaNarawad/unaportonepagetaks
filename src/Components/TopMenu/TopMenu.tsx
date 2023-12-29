@@ -1,5 +1,5 @@
-import live1 from "../../assets/live1.png";
-import live2 from "../../assets/live2.png";
+import blackwhitecircle from "../../assets/live1.png";
+import toggle from "../../assets/live2.png";
 import notificationbell from "../../assets/notificationbell.png";
 import avtar from "../../assets/avtar.png";
 import "./topmenu.css";
@@ -9,6 +9,7 @@ import MainTable from "@/Components/Maintable/MainTable";
 
 const tableData = [
   {
+    checkbox:"",
     ConsentID: "-",
     Vuaid: "9652902011@ink",
     Tracking: "test_18Dec",
@@ -31,6 +32,7 @@ const tableData = [
     Operations: "img",
   },
   {
+    checkbox:"true",
     ConsentID: "-",
     Vuaid: "9652902011@ink",
     Tracking: "test_18Dec",
@@ -42,6 +44,7 @@ const tableData = [
     Operations: "img",
   },
   {
+    checkbox:"true",
     ConsentID: "-",
     Vuaid: "9652902011@ink",
     Tracking: "test_18Dec",
@@ -76,9 +79,9 @@ const TopMenu: React.FC = () => {
         </div>
         <div className="header-end">
         <div className="livetoggle">
-          <img src={live1} width="20" height={20} />
-          <p className="live1">Live</p>
-          <img src={live2} width="25" height={18} />
+          <img src={blackwhitecircle} width="20" height={20} />
+          <p className="livetext">Live</p>
+          <img src={toggle} width="30" height={15} />
           <div className="notification">
             <img src={notificationbell} width="20" />
           </div>
