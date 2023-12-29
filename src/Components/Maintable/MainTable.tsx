@@ -4,6 +4,7 @@ import "./maintable.css";
 import Functionbar from "../TopMenu/Functionbar";
 
 interface tableData {
+  checkbox: string,
   ConsentID: string;
   Vuaid: string;
   Tracking: string;
@@ -23,14 +24,12 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
         <Functionbar />
         <div className="bodytable">
           <table className="table">
-            <thead className="tablehead">
+            <thead>
               <tr>
-                <div className="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                  </label>
-                  <th>Consent ID</th>
-                </div>
+                <th>
+                <input type="checkbox" />
+                </th>
+                <th>Consent ID</th>
                 <th>Vua id</th>
                 <th>Tracking Id</th>
                 <th>Created By</th>
@@ -41,10 +40,11 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                 <th>Operations</th>
               </tr>
             </thead>
-            <tbody className="tablebody">
+            <tbody>
               {tableData &&
                 tableData.map((tableData) => (
                   <tr>
+                    <td> {tableData.checkbox}</td>
                     <td> {tableData.ConsentID}</td>
                     <td> {tableData.Vuaid}</td>
                     <td> {tableData.Tracking}</td>
