@@ -1,14 +1,3 @@
-// import React from "react";
-
-// export default function HomePage() {
-//   return (
-//     <div>
-     
-//     </div>
-//   );
-// }
-
-
 import React from 'react';
 import SearchBar from '@/Components/TopMenu/SecondNav';
 
@@ -21,7 +10,6 @@ const Index: React.FC = () => {
 
   return (
     <div>
-      <h1>Hello UmiJS with TypeScript!</h1>
       <SearchBar options={options} onSelect={handleSelect} />
     </div>
   );

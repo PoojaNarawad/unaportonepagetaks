@@ -2,10 +2,17 @@
   margin: 1.2rem;
 }
 
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 10px;
+  display: none; /* Hide by default on larger screens */
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin:0.5rem;
   width: 220px;
   padding: 10px;
 }
@@ -15,6 +22,18 @@
   padding: 1rem;
   text-decoration: none;
   color: black;
+  font-weight: 500;
+}
+
+ 
+ .dashboard {
+  color: rgba(4, 0, 189, 1);
+  background-color: #b6d1f5;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #b6d1f5;
 }
 
 .sidebar a img {
@@ -25,23 +44,47 @@
   display: flex;
   justify-content: space-evenly;
   margin-left: -30px;
-  padding: 2.9rem;
+  margin: 20px 0px;
+  padding: 2rem;
   font-family: Inter;
   font-size: 0.9rem;
+  border-bottom: 1px solid rgb(233, 230, 230);
+  border-top: 1px solid rgb(233, 230, 230);
+  font-weight: 500;
 }
 
 .help,
 .logout {
   display: flex;
   font-family: Inter;
-  margin-left: 18px;
+ padding: 1rem;
+ margin: 1rem;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.logout {
-  padding: 1rem;
-}
 .logout img,
 .help img {
   margin-right: 5px;
 }
+
+
+/* code for responsive */
+
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar, .darkmodetoggle, .help, .logout, .logo {
+    display: none; 
+  }
+
+  .sidebar-container.open {
+    .sidebar, .darkmodetoggle, .help, .logout, .logo {
+      display: flex; 
+    }
+  }
+}
+

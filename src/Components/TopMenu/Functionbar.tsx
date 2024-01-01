@@ -8,10 +8,7 @@ import line from "../../assets/Line 224.png";
 import SearchPage from '../../pages/SearchPage'
 
 const Functionbar: React.FC = () => {
-    // const handleSearch = (query: string) => {
-    //     // have to Perform the search logic here
-    //     console.log('Search query:', query);
-    //   };
+    
   return (
     <div>
       <div className="functionbar">

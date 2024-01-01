@@ -27,7 +27,8 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
     <div className="maintable">
       <SearchBar />
       <Functionbar />
-      <div className="bodytable">
+      <div className="table-container">
+        <div className="scroll-wrapper">
         <table className="table">
           <thead>
             <tr>
@@ -68,7 +69,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.ConsentID}
                   </td>
                   <td
@@ -79,7 +79,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.Vuaid}
                   </td>
                   <td
@@ -90,7 +89,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.Tracking}
                   </td>
                   <td
@@ -101,7 +99,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.CreatedBy}
                   </td>
                   <td
@@ -112,7 +109,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.ConsentHandle}
                   </td>
                   <td
@@ -123,7 +119,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.CreatedOn}
                   </td>
                   <td
@@ -134,7 +129,6 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
                           : "white",
                     }}
                   >
-                    {" "}
                     {tableData.FIPIDs}
                   </td>
                   <td
@@ -163,6 +157,7 @@ const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
               ))}
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   );

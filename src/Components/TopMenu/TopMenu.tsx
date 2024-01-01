@@ -6,6 +6,7 @@ import "./topmenu.css";
 import React from "react";
 import MainTable from "@/Components/Maintable/MainTable";
 // import { AiOutlineSearch } from 'react-icons/ai';
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const tableData = [
   {
@@ -79,9 +80,9 @@ const TopMenu: React.FC = () => {
         </div>
         <div className="header-end">
         <div className="livetoggle">
-          <img src={blackwhitecircle} width="20" height={20} />
+          <img src={blackwhitecircle} width="15" height={15} />
           <p className="livetext">Live</p>
-          <img src={toggle} width="30" height={15} />
+          <img src={toggle} width="30" height={15} className="toggleblue" />
           <div className="notification">
             <img src={notificationbell} width="20" />
           </div>
@@ -91,6 +92,10 @@ const TopMenu: React.FC = () => {
             <div className="nameemail">
             <h5 className="name">Vishal Adhlakha</h5>
             <h6 className="email">vishaladhalkha@mail.com</h6>
+            </div>
+            <div id="threedot">
+
+            <BsThreeDotsVertical size={20} />      
             </div>
         </div>
         </div>

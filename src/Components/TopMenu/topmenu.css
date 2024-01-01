@@ -4,7 +4,7 @@
   align-items: center;
   height: auto;
   width: 100%;
-  padding: 10px;
+  padding: 10px 60px 10px 20px;
 }
 .header-search{
   display: flex;
@@ -35,6 +35,13 @@
   font-family:Inter;
 }
 
+.toggleblue{
+  padding-left: 2px;
+  object-fit: contain;
+  width: 70px;
+  height: 16px;
+}
+
 .notification {
   margin-left:0.9rem;
   margin-right: 0.9rem;
@@ -43,7 +50,7 @@
 .avtar {
   background-color: aliceblue;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -64,6 +71,11 @@
   font-family:Inter;
 }
 
+#threedot{
+  margin-left: 10px;
+  color: gray;
+}
+
 
 /* topheader ends here */
 
@@ -71,30 +83,33 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: 1.1rem;
 }
 
 .secondnav div p {
   font-size:0.8rem;
   margin-top: 2.5rem;
+  font-weight: 700;
 }
 
 .secondnav div select {
   padding: 7px;
   width: 20vw;
-  border: 1px solid rgb(226, 220, 220);
+  height: 42px;
+  border: 1px solid rgb(185, 179, 179);
   color: rgb(150, 147, 147);
   margin-top: 8px;
   border-radius: 5px;
 }
 
+
 button {
   padding: 0.6rem;
-  margin-right:0.6rem;
+  margin-right:0.4rem;
   margin-top: 3.8rem;
   width:7.1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  border: 1px solid rgb(185, 179, 179);
 }
 .search {
   background-color: rgb(26, 26, 168);
@@ -137,6 +152,7 @@ button {
 
 .buttonsection img {
   margin-right: 8px;
+  object-fit: contain;
 }
 
 .searchbar {
@@ -144,6 +160,7 @@ button {
   align-items: center;
   border: 1px solid rgb(226, 220, 220);
   border-radius: 10px;
+  padding: 0px 10px 0px 10px;
 }
 .searchbar input[type="text"] {
   margin: 6px;

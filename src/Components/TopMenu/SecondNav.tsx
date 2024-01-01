@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./topmenu.css";
 
 interface DropdownProps {
-  options?: string[] | undefined;
-  onSelect?: (selectedOption: string) => void;
+  options: string[] | undefined;
+  onSelect: (selectedOption: string) => void;
 }
 
 const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
@@ -24,8 +24,8 @@ const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
           <option value="" >
             please enter
           </option>
-          {options.map((option) => (
-            <option key={option} value={option}>
+          {options.map((option , index) => (
+            <option key={index} value={option}>
               {option}
             </option>
           ))}
@@ -40,8 +40,8 @@ const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
           <option value="" >
           please enter
           </option>
-          {options.map((option) => (
-            <option key={option} value={option}>
+          {options.map((option, index) => (
+            <option key={index} value={option}>
               {option}
             </option>
           ))}
@@ -56,14 +56,14 @@ const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
           <option value="" >
           please enter
           </option>
-          {options.map((option) => (
-            <option key={option} value={option}>
+          {options.map((option,index) => (
+            <option key={index} value={option}>
               {option}
             </option>
           ))}
         </select>
       </div>
-      <div>
+      <div className="secondnavbuttons">
         <button className="search">Search</button>
       </div>
       <div>

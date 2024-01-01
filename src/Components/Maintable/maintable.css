@@ -1,28 +1,61 @@
 .maintable {
   background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
 }
 
-.bodytable {
+.table-container {
   background-color: white;
   margin: 16px;
+  overflow-x: auto;
 }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 thead,
 tbody,
 th,
 td {
-  font-family: Inter;
+  font-family:sans-serif;
 }
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 thead th {
-  
   height: 44px;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
- border-bottom: 2px solid  rgb(233, 230, 230);
+  border-bottom: 1px solid rgb(233, 230, 230);
 }
 
 .table tbody td {
-  font-size:12px;
+  font-size: 12px;
   width: 217px;
-  padding: 10px;
+  padding: 20px;
+}
+
+
+@media (max-width: 800px) {
+  .table-container {
+    overflow-x: auto; 
+    max-width: 800px;
+    margin: 20px; 
+  }
+  
+  .scroll-wrapper {
+    width: max-content; 
+  }
+  
+  
+  .table {
+    min-width: 100%; 
+  }
 }
