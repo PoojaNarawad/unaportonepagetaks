@@ -10,8 +10,8 @@ import SearchPage from '../../pages/SearchPage'
 const Functionbar: React.FC = () => {
     
   return (
-    <div>
-      <div className="functionbar">
+    <div className="functionbar">
+      <div >
         <div className="buttonsection">
         <img src={button} width="25" />
         <img src={button1} width="25" />

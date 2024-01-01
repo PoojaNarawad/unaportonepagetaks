@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SearchBar from "../TopMenu/SecondNav";
+import SecondNav from "../TopMenu/SecondNav";
 import "./maintable.css";
 import Functionbar from "../TopMenu/Functionbar";
 
@@ -18,14 +18,20 @@ interface tableData {
 
 const MainTable: React.FC<{ tableData: tableData[] }> = ({ tableData }) => {
   const [checkedRowIndex, setCheckedRowIndex] = useState<number | null>(null);
+  const options = ['Option 1', 'Option 2', 'Option 3'];
+
 
   const handleCheckboxChange = (index: number) => {
     setCheckedRowIndex(index === checkedRowIndex ? null : index);
   };
 
+  const handleSelect = (selectedOption: string) => {
+    console.log(`Selected option: ${selectedOption}`);
+  };
+
   return (
     <div className="maintable">
-      <SearchBar />
+      <SecondNav options={options} onSelect={handleSelect}/>
       <Functionbar />
       <div className="table-container">
         <div className="scroll-wrapper">

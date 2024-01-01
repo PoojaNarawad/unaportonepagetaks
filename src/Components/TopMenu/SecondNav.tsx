@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./topmenu.css";
 
 interface DropdownProps {
-  options: string[] | undefined;
+  options: string[];
   onSelect: (selectedOption: string) => void;
 }
 
-const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
+const SearchBar: React.FC<DropdownProps> = ({ options, onSelect }) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
   const handleSelect = (option: string) => {
@@ -65,8 +65,6 @@ const SearchBar: React.FC<DropdownProps> = ({ options = [], onSelect }) => {
       </div>
       <div className="secondnavbuttons">
         <button className="search">Search</button>
-      </div>
-      <div>
         <button className="reset">Reset</button>
       </div>
     </div>
